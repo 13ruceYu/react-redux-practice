@@ -32,7 +32,7 @@ export default class Count extends Component {
   incrementAsync = () => {
     let { val } = this.state
     // setTimeout(() => {
-    this.props.jiaAsync(val, 500)
+    this.props.jiaAsync(val)
     // }, 500);
   }
 
