@@ -10,20 +10,20 @@ import {
 //引入connect用于连接UI组件与redux
 import { connect } from 'react-redux'
 
-/* 
-  1.mapStateToProps函数返回的是一个对象；
-  2.返回的对象中的key就作为传递给UI组件props的key,value就作为传递给UI组件props的value
-  3.mapStateToProps用于传递状态
-*/
+/**
+ * 映射状态
+ * @param {any} state 
+ * @returns {Objeact}
+ */
 function mapStateToProps (state) {
   return { count: state }
 }
 
-/* 
-  1.mapDispatchToProps函数返回的是一个对象；
-  2.返回的对象中的key就作为传递给UI组件props的key,value就作为传递给UI组件props的value
-  3.mapDispatchToProps用于传递操作状态的方法
-*/
+/**
+ * 映射操作状态的方法
+ * @param {*} dispatch 
+ * @returns {Object} object 中的 key，value 作为传递给 UI 组件 props 的 key，value
+ */
 function mapDispatchToProps (dispatch) {
   return {
     jia: number => dispatch(incrementCount(number)),
