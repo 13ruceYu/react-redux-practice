@@ -48,7 +48,7 @@
         connect(
           state => ({key: value}), // 映射状态
           {key: xxxAction} // 映射 action
-        )
+        )(UI 组件)
       ```
 
    3. 在 UI 组价中通过 `this.props.xxx` 读取和操作状态

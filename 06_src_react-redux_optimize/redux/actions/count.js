@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT } from './constant'
+import { INCREMENT, DECREMENT } from '../constant'
 
 function incrementCount (data) {
   return { type: INCREMENT, data }
